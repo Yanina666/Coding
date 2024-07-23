@@ -3,6 +3,19 @@ import java.util.HashSet;
 
 public class Duplicates {
 
+    //реализовать метод, который будет возвращать количество передаваемого символа в слове.
+    //Пример: countCharAtWord('s', 'soska')
+    public static int countSymbolsAtString(char s, String str){
+        int counter = 0;
+        char[] chars = str.toCharArray();
+        for (int i = 0; i < chars.length; i++ ){
+if (s == chars[i]) {
+   counter = counter +1;
+}
+        }
+        return counter;
+    }
+
     //на вход строка и нужно подсчитать кол-во символов
     public static int method(String word){
         return word.toCharArray().length;
@@ -28,7 +41,9 @@ return new String(chars); //создадим новую строку,котор�
         }
         //System.out.println(hashSet);
         //System.out.println(method("Love"));
-        System.out.println(reverseString("12345"));
+        //System.out.println(reverseString("12345"));
+        //String str = "Hello world";
+        System.out.println(countSymbolsAtString('s', "Soska".toLowerCase()));
     }
 }
 
