@@ -7,7 +7,8 @@ public class Duplicates {
     //Пример: countCharAtWord('s', 'soska')
     public static int countSymbolsAtString(char s, String str){
         int counter = 0;
-        char[] chars = str.toCharArray();
+        String result = str.toLowerCase();
+        char[] chars = result.toCharArray();
         for (int i = 0; i < chars.length; i++ ){
 if (s == chars[i]) {
    counter = counter +1;
@@ -43,7 +44,7 @@ return new String(chars); //создадим новую строку,котор�
         //System.out.println(method("Love"));
         //System.out.println(reverseString("12345"));
         //String str = "Hello world";
-        System.out.println(countSymbolsAtString('s', "Soska".toLowerCase()));
+        System.out.println(countSymbolsAtString('s', "Sosssska"));
     }
 }
 
